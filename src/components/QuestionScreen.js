@@ -42,7 +42,7 @@ function QuestionScreen() {
   const [start, setStart] = useState(false);
 
   const onNextHandler = useCallback(() => {
-    setSecond(3);
+    setSecond(10);
     if (questionNumber < 3) {
       if (answerText.current.value === questions[questionNumber].answer) {
         dispatch(answerAction.correct());
